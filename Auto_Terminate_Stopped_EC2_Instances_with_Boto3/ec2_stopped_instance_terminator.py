@@ -7,8 +7,6 @@ AWS Lambda function to automatically terminate stopped EC2 instances.
 
 
 def lambda_handler(event, context):
-
-
     """
     Entry point for the Lambda function.
     Args:
