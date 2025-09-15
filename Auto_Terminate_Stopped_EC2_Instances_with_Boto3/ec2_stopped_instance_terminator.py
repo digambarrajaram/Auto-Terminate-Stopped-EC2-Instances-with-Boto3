@@ -1,6 +1,7 @@
 import boto3
 
 
+
 """
 AWS Lambda function to automatically terminate stopped EC2 instances.
 """
