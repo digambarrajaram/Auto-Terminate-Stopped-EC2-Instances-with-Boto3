@@ -1,7 +1,20 @@
 import boto3
 
 
+"""
+AWS Lambda function to automatically terminate stopped EC2 instances.
+"""
 def lambda_handler(event, context):
+    """
+    Entry point for the Lambda function.
+
+    Args:
+        event (dict): AWS Lambda event payload.
+        context (LambdaContext): AWS Lambda context object.
+
+    Returns:
+        dict: HTTP-style response indicating termination status.
+    """
     ec2 = boto3.client('ec2')
 
     # Get all stopped instances
